@@ -1,0 +1,236 @@
+#Header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 85px;
+  padding: 0px 25px;
+  background-color: #dfdfdf;
+  transition: all 0.3s;
+}
+#Header .logo {
+  width: 200px;
+  height: 100%;
+}
+#Header .logo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#Header .logo h1 img {
+  width: 85%;
+}
+#Header .left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  margin-right: 15px;
+}
+#Header .left li {
+  flex: 1;
+  height: 100%;
+}
+#Header .left li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 18px;
+}
+#Header .left li a:hover {
+  color: #b4071a;
+}
+#Header .left li a .dropBox {
+  position: absolute;
+  top: 85px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+#Header .left li a .dropBox li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  width: 173px;
+  padding: 11px 0px;
+}
+#Header .left li a.active {
+  font-size: 20px;
+  color: #b4071a;
+}
+#Header .right {
+  display: flex;
+  width: 300px;
+  height: 100%;
+}
+#Header .right li {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+#Header .right li a {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+}
+#Header .right li a:hover {
+  color: #b4071a;
+}
+#Header .right li a .search {
+  width: 20%;
+  margin-left: 33px;
+}
+#Header .right li a.active {
+  font-size: 20px;
+}
+#Header .right li .twoA {
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+#FOOTER {
+  width: 100%;
+  height: 270px;
+  background-color: #77102d;
+}
+#FOOTER .w {
+  height: 100%;
+  display: flex;
+}
+#FOOTER .w .left {
+  width: 305px;
+  height: 100%;
+  padding: 0px 0px 105px 0px;
+  display: flex;
+  align-items: center;
+}
+#FOOTER .w .left img:nth-child(1) {
+  width: 59px;
+  height: 95px;
+}
+#FOOTER .w .left img:nth-child(2) {
+  height: 62px;
+  margin-left: 10px;
+  margin-top: 39px;
+}
+#FOOTER .w .center {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FOOTER .w .center ul {
+  width: 160px;
+  height: 100%;
+  margin: 0px 10px;
+  padding: 20px 0px;
+}
+#FOOTER .w .center ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+#FOOTER .w .center ul .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+#FOOTER .w .right {
+  flex: 1;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+}
+#FOOTER .w .right img {
+  height: 50%;
+  margin: 0px 10px;
+}
+#Terminal {
+  z-index: 999;
+  display: flex;
+  position: fixed;
+  top: 15%;
+  right: -169px;
+  height: 90px;
+  width: 200px;
+  border: 1px solid #b4071a;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+#Terminal .open {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  padding: 0px 7px;
+  background-color: #b4071a;
+  color: #fff;
+  font-weight: bold;
+}
+#Terminal .main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+#Terminal .main .item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+#Terminal .main .item button {
+  padding: 5px 8px;
+  margin: 5px 0px;
+  border: 1px solid #b4071a;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+#Terminal .main .item button:hover {
+  background-color: #b4071a;
+  color: #fff;
+}
+#Terminal.active {
+  right: 0px;
+}
+#MoveWindow {
+  z-index: 9999;
+  height: 100px;
+  width: 80px;
+  position: fixed;
+  /*fixed实现绝对定位*/
+  cursor: pointer;
+}
+#MoveWindow img {
+  width: 100%;
+  height: 100%;
+}
+#TimeNow {
+  z-index: 9;
+  position: fixed;
+  top: 34%;
+  right: 25px;
+  padding: 15px 30px;
+  font-size: 25px;
+  color: #fff;
+  background-color: #77102d83;
+  border: 1px solid #fff;
+}

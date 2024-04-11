@@ -1,0 +1,405 @@
+// 横幅
+.Banner{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    .w{
+        position: relative;
+        height: 100%;
+    }
+    // 主图片
+    .main_img{
+        z-index: 999;
+        position: absolute;
+        top:5%;
+        right: 15%;
+        width: 36%;
+    }
+    // 阴影图片
+    .yinying{
+        position: absolute;
+        top:81%;
+        width: 15%;
+    }
+    .yinying01{
+        right:32%;
+    }
+    .yinying02{
+        right:17%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        color:#fff;
+        top:136px;
+        left:0px;
+        height:211px;
+        width: 333px;
+        padding: 0px 40px;
+        // border: 1px solid pink;
+        h2{
+            font-size: 40px;
+            color:#fff;
+            font-weight: 500;
+            font-family: 'ZhenyanGB';
+        }
+        button{
+            width: 98px;
+            height: 35px;
+            margin-top: 30px;
+        }
+
+    }
+}
+
+// 大标题
+.MainTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    margin: 20px 0px;
+    .content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 150px;
+        height: 100%;
+        padding: 0px 10px;
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        &::before{
+            position: absolute;
+            top:35px;
+            left:-29px;
+            content: ' ';
+            display: block;
+            height: 5px;
+            width: 60px;
+            background-color: var(--subColor);
+            transform: rotate(90deg);
+        }
+    }
+}
+
+// 专题系列
+.Thematic-series{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 20px 0px;
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 430px;
+        padding: 8px;
+        line-height: 30px;
+        img{
+            width: 246px;
+        }
+        h2{
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        button{
+            width: 74px;
+            height: 34px;
+            margin-top: 20px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+    }
+}
+
+// 爆款热卖
+.Hot-sale{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    .more{
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+        width: 74px;
+            height: 34px;
+            margin-top: 20px;
+            border: 2px solid #000;
+            background-color: #fff;
+    }
+    .box1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top:0px;
+        left:78px;
+        width: 350px;
+        height: 450px;
+        padding-top: 30px;
+        background-color: var(--border-color);
+        img{
+            width: 200px;
+        }
+        .info{
+            position: absolute;
+            bottom: 0px;
+            left:83px;
+            padding: 5px;
+            border: 2px solid #fff;
+            .name{
+                font-size: 16px;
+            }
+            .price span{
+                font-size: 18px;
+            }
+        }
+    }
+    .box2{
+        display: flex;
+        position: absolute;
+        top:0px;
+        right:255px;
+        width: 372px;
+        height: 150px;
+        background-color: #dfdfdf;
+        img{
+            height: 100%;
+        }
+        .info{
+            position: absolute;
+            bottom: 10px;
+            right:0px;
+            padding: 5px;
+            border: 2px solid #fff;
+            .name{
+                font-size: 16px;
+            }
+            .price span{
+                font-size: 18px;
+            }
+        }
+    }
+    .box3{
+        display: flex;
+        position: absolute;
+        top:302px;
+        right:183px;
+        width: 372px;
+        height: 150px;
+        background-color: #dfdfdf;
+        img{
+            height: 100%;
+        }
+        .info{
+            position: absolute;
+            bottom: 10px;
+            left:0px;
+            padding: 5px;
+            border: 2px solid #fff;
+            .name{
+                font-size: 16px;
+            }
+            .price span{
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+// 女士系列
+.Women-Series{
+    display: flex;
+    width: 100%;
+    height: 829px;
+    padding: 0px 161px;
+    .content{
+        position: relative;
+        flex:1;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .content01{
+        img{
+            position: absolute;
+            top: 0px;
+            left:0;
+            right: 0;
+        }
+        .info{
+            z-index: 999;
+            position: absolute;
+            bottom: 93px;
+            right: -24px;
+            border: 1px solid #000;
+            padding: 10px 40px;
+            .name{
+                font-size: 16px;
+            }
+        }
+    }
+    .content02{
+        img{
+            position: absolute;
+            bottom: 0px;
+            left:0;
+            right: 0;
+        }
+        .info{
+            z-index: 999;
+            position: absolute;
+            top: 93px;
+            left: -24px;
+            border: 2px solid #000;
+            padding: 10px 40px;
+            .name{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.More{
+    width: 100%;
+    height: 80px;
+    .more{
+        width: 74px;
+            height: 34px;
+            margin-top: 10px;
+            margin-left: 40%;
+            border: 2px solid #000;
+            background-color: #fff;
+    }
+}
+// 品牌故事
+.Story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 393px;
+    line-height: 30px;
+    font-size: 15px;
+    .toIndex{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-top: 30px;
+       width: 100%;
+       height: 70px;
+       img{
+           height: 30px;
+       }
+    }
+
+}
+
+
+// 轮播图
+.banner_box {
+	width: 1190px;
+    margin: 0 auto;
+	height: 572px;
+	overflow: hidden;
+	position: relative;
+}
+
+.box-1 ul li {
+	width: 100;
+	height: 572px;
+	position: relative;
+	overflow: hidden;
+}
+
+.box-1 ul li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.box-1 ul li h2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	background: rgba(125, 125, 120, .4);
+	text-indent: 2em;
+	padding-right: 500px;
+	font-size: 15px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: normal;
+	color: ghostwhite
+}
+
+.box-2 {
+	position: absolute;
+	right: 10px;
+	bottom: 14px;
+}
+
+.box-2 ul li {
+	float: left;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.5);
+	text-indent: 100px;
+	cursor: pointer;
+}
+
+.box-2 ul .on {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.box-3 span {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.1);
+	width: 50px;
+	height: 80px;
+	top: 50%;
+	font-family: "宋体";
+	line-height: 80px;
+	font-size: 60px;
+	margin-top: -40px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.box-3 .prev {
+	left: 10px;
+}
+
+.box-3 .next {
+	right: 10px;
+}
+
+.box-3 span::selection {
+	background: transparent;
+}
+
+.box-3 span:hover {
+	background: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, 1)
+}

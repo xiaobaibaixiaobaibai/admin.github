@@ -1,0 +1,235 @@
+.Banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color: var(--main-color);
+  background-image: url(../static/img/banner01.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.Banner p {
+  color: #fff;
+  font-size: 46px;
+}
+.Banner p:nth-child(2) {
+  font-size: 30px;
+}
+.container {
+  margin-top: 40px;
+}
+.container .w {
+  display: flex;
+}
+.container .left {
+  width: 260px;
+  padding-right: 20px;
+}
+.container .left .shopInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 445px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .left .shopInfo .My {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 132px;
+}
+.container .left .shopInfo .My .hd {
+  width: 100%;
+  flex: 1;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .left .shopInfo .My .hd .user-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+.container .left .shopInfo .My .hd .userImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+}
+.container .left .shopInfo .My .hd .userImg img {
+  width: 100%;
+}
+.container .left .shopInfo .My .bd {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-bottom: 2px dashed var(--border-color);
+}
+.container .left .shopInfo .My .bd img {
+  height: 56%;
+}
+.container .left .shopInfo .My .bd span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--subColor);
+  color: #fff;
+}
+.container .left .shopInfo .My .bd span:nth-child(1) {
+  position: absolute;
+  top: 5px;
+  left: 79px;
+}
+.container .left .shopInfo .My .bd span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 190px;
+}
+.container .left .shopInfo .List {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+.container .left .shopInfo .List .item {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 18px;
+}
+.container .left .shopInfo .List .active {
+  color: var(--subColor);
+}
+.container .right {
+  position: relative;
+  flex: 1;
+  height: 1000px;
+  border-radius: 8px 8px 0px 0px;
+  padding: 8px 0px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .right .background {
+  z-index: -999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.container .right .title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+.container .right .navTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 22px;
+  padding: 0px 40px;
+  background-color: var(--border-color);
+  font-size: 14px;
+}
+.container .right .navTitle .navTitle-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  width: 200px;
+}
+.container .right .navTitle .navTitle-right {
+  display: flex;
+  height: 100%;
+  width: 454px;
+}
+.container .right .navTitle .navTitle-right div {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right .shopShow {
+  display: flex;
+  flex-direction: column;
+}
+.container .right .shopShow .item {
+  display: flex;
+  width: 100%;
+  height: 156px;
+  padding: 0px 20px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.container .right .shopShow .item .imgPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 156px;
+  height: 100%;
+}
+.container .right .shopShow .item .imgPic img {
+  height: 72%;
+}
+.container .right .shopShow .item .info {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+.container .right .shopShow .item .info .shopName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 254px;
+  height: 100%;
+}
+.container .right .shopShow .item .info .shopName h3 {
+  font-size: 14px;
+}
+.container .right .shopShow .item .info .shopName p {
+  font-size: 12px;
+  color: #9d9d9d;
+}
+.container .right .shopShow .item .info .box {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+.container .right .shopShow .item .info .box button {
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 0;
+  background-color: var(--subColor);
+  color: #fff;
+}
+.container .right .shopShow .item .info .box .toBuy {
+  color: var(--subColor);
+}

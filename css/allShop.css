@@ -1,0 +1,234 @@
+.Banner {
+  width: 100%;
+  height: 450px;
+  background-color: var(--main-color);
+  background-image: url(../static/img/pic02.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.Banner .w {
+  position: relative;
+  height: 100%;
+}
+.Banner .title {
+  position: absolute;
+  font-size: 35px;
+  color: #fff;
+  font-family: ZhenyanGB;
+}
+.Banner .tit1 {
+  top: 171px;
+  left: 198px;
+}
+.Banner .tit2 {
+  top: 223px;
+  left: 366px;
+}
+.Banner .tit3 {
+  top: 273px;
+  left: 238px;
+  font-size: 26px;
+}
+.Banner .tit4 {
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+}
+.Banner .tit5 {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  font-size: 16px;
+  color: #fff;
+}
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  padding: 10px 0px;
+}
+.Title img {
+  height: 28%;
+}
+.Title h3 {
+  font-size: 27px;
+}
+.ClassShop {
+  width: 100%;
+  padding: 0px 30px;
+  margin: 10px 0px;
+  border: 2px solid var(--border-color);
+}
+.ClassShop .item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 66px;
+  border-bottom: 2px solid var(--border-color);
+}
+.ClassShop .item:nth-child(3) {
+  border: 0;
+}
+.ClassShop .item .title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 20%;
+  height: 100%;
+}
+.ClassShop .item .title span {
+  font-size: 18px;
+}
+.ClassShop .item .title span:nth-child(2) {
+  margin-left: 10px;
+  color: var(--border-color);
+}
+.ClassShop .item .content {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  height: 100%;
+}
+.ClassShop .item .content li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+}
+.ClassShop .item .content li.active {
+  color: var(--subColor);
+}
+.ordination {
+  display: flex;
+  width: 100%;
+  height: 66px;
+  margin: 15px 0px;
+  padding: 0px 30px;
+  border: 2px solid var(--border-color);
+}
+.ordination li {
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 111px;
+  height: 100%;
+}
+.ordination li.active {
+  color: var(--subColor);
+}
+.ordination .element01::after {
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-left: 5px;
+  background-image: url(../static/img/jiantoushang.png);
+  background-size: 100%;
+}
+.ordination .element02::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-image: url(../static/img/yuandian.png);
+  background-size: 100%;
+}
+.ShopList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 60px 0px;
+}
+.ShopList .listItem {
+  width: 33%;
+  height: 443px;
+  padding: 15px;
+}
+.ShopList .listItem .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 23px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.ShopList .listItem .box img {
+  margin-top: 20px;
+  height: 286px;
+  transition: all 0.3s;
+}
+.ShopList .listItem .box img:hover {
+  transform: translateY(-10px);
+}
+.ShopList .listItem .box .shopInfo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  color: #000;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s;
+}
+.ShopList .listItem .box .shopInfo:hover {
+  color: var(--subColor);
+}
+.ShopList .listItem .box .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+.ShopList .listItem .box .buy .price {
+  font-size: 18px;
+  color: var(--subColor);
+}
+.ShopList .listItem .box .buy .buyBtn {
+  font-size: 18px;
+  border: 0;
+  background-color: transparent;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  margin: 40px 0px;
+  margin-bottom: 100px;
+}
+.pagination ul {
+  display: flex;
+  width: 261px;
+  height: 100%;
+  border: 1px solid #000;
+}
+.pagination ul li {
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+.pagination ul .btn {
+  font-size: 37px;
+  vertical-align: middle;
+  background-color: var(--subColor);
+}
+.pagination ul .active {
+  color: var(--subColor);
+}

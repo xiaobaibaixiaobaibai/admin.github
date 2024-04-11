@@ -1,0 +1,251 @@
+.Banner {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  background-color: var(--main-color);
+  background-image: url(../static/img/banner02.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.Banner .w {
+  position: relative;
+}
+.Banner .box {
+  position: absolute;
+  top: 97px;
+  left: 145px;
+  width: 240px;
+  height: 240px;
+  padding: 8px;
+  border: 2px solid #fff;
+}
+.Banner .box h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 55px;
+  font-family: ZhenyanGB;
+}
+.Banner .box .more {
+  display: flex;
+  width: 100%;
+  height: 74px;
+  color: #fff;
+}
+.Banner .box .more div:nth-child(1) {
+  flex: 1;
+  height: 100%;
+  font-size: 19px;
+}
+.Banner .box .more div:nth-child(2) {
+  width: 60px;
+  height: 100%;
+  font-size: 18px;
+}
+.Banner .box .more div:nth-child(2) span {
+  font-size: 30px;
+}
+.recommend {
+  display: flex;
+  width: 100%;
+  height: 850px;
+  margin: 81px 0px;
+  padding: 0px 65px;
+}
+.recommend .item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recommend .item .pic-box {
+  width: 100%;
+  height: 371px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recommend .item .pic-box img {
+  height: 90%;
+}
+.recommend .item .pic-box:nth-child(1) {
+  background-color: #ffdad1;
+}
+.recommend .item .pic-box:nth-child(2) {
+  background-color: #c5fff3;
+}
+.recommend .item .info {
+  width: 100%;
+  flex: 1;
+  padding: 110px 65px 0px 26px;
+}
+.recommend .item .info h2 {
+  font-size: 30px;
+  font-weight: 550;
+}
+.recommend .item .info h3 {
+  font-weight: 500;
+}
+.recommend .item .info .Brief {
+  margin: 20px 0px;
+}
+.recommend .item .info table tr td:nth-child(1) {
+  padding: 8px 10px;
+}
+.recommend .item .info table tr td:nth-child(2) {
+  padding: 8px 0px;
+  width: 223px;
+}
+.recommend .item .info table .price {
+  font-size: 25px;
+  color: var(--subColor);
+}
+.recommend .item .info table .price_sub {
+  font-size: 20px;
+}
+.recommend .item .info table .goods-color ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+}
+.recommend .item .info table .goods-color ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 23px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+.recommend .item .info table .goods-color ul .active {
+  border: 1px solid #000;
+}
+.recommend .item .info table .count {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+}
+.recommend .item .info table .count button {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  font-size: 24px;
+}
+.recommend .item .info table .count .count_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60px;
+  height: 38px;
+  border: 1px solid var(--border-color);
+}
+.recommend .item .info .goods_buy {
+  display: flex;
+  padding: 5px 0px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.recommend .item .info .goods_buy .buyBtn {
+  width: 95px;
+  height: 32px;
+  border: 1px solid var(--subColor);
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+.recommend .item .info .goods_buy .buyBtn:nth-child(1) {
+  background-color: var(--subColor);
+  color: #fff;
+}
+.recommend .item .info .goods_buy .buyBtn:nth-child(2) {
+  margin-left: 10px;
+}
+.recommend .item02 .info {
+  padding: 0px 55px 0px 50px;
+}
+.subBanner {
+  margin: 40px 0px;
+}
+.subBanner img {
+  width: 100%;
+}
+.ShopList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 60px 0px;
+}
+.ShopList .listItem {
+  width: 33%;
+  height: 443px;
+  padding: 15px;
+}
+.ShopList .listItem .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 23px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.ShopList .listItem .box img {
+  margin-top: 20px;
+  height: 286px;
+  max-width: 368px;
+  transition: all 0.3s;
+}
+.ShopList .listItem .box img:hover {
+  transform: translateY(-10px);
+}
+.ShopList .listItem .box .shopInfo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s;
+}
+.ShopList .listItem .box .shopInfo:hover {
+  color: var(--subColor);
+}
+.ShopList .listItem .box .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+.ShopList .listItem .box .buy .price {
+  font-size: 18px;
+  color: var(--subColor);
+}
+.ShopList .listItem .box .buy .buyBtn {
+  font-size: 18px;
+  border: 0;
+  background-color: transparent;
+}
+.moreGoods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.moreGoods button {
+  padding: 8px 14px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+}

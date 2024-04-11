@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱华仕-精品服饰</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 功能控制 -->
+    <div id="Terminal">
+        <div class="open" id="OpenTerminalBtn">
+            <p>展开</p>
+        </div>
+        <div class="main">
+            <div class="item">
+                <p>飘窗</p>
+                <button id="MoveWindowBtn">关闭</button>
+            </div>
+            <div class="item">
+                <p>时间</p>
+                <button id="TimeWindowBtn">关闭</button>
+            </div>
+        </div>
+    </div>
+    <!-- 飘窗 -->
+    <div id="MoveWindow">
+        <a href="https://www.bing.com">
+            <img src="./static/img/蓝底_二寸.jpg" alt="">
+        </a>
+    </div>
+    <!-- 当前时间 -->
+    <div id="TimeNow">
+    </div>
+    <!-- header -->
+    <div id="Header" class="top">
+        <!-- logo -->
+        <div class="logo">
+            <h1>
+                <a href="./index.html">
+                    <img src="./static/img/logo1.png" alt="">
+                </a>
+            </h1>
+        </div>
+        <!-- 左侧内容 -->
+        <ul class="left">
+            <li>
+                <a class="active" href="./index.html">
+                    首页
+                </a>
+            </li>
+            <li>
+                <a class="dropdown" href="./allShop.html">
+                    所有宝贝
+                    <ul style="display: none;" class="dropBox">
+                        <li>行李箱</li>
+                        <li>背包</li>
+                        <li>旅行者系列</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="./newShop.html">
+                    新品专区
+                </a>
+            </li>
+            <li>
+                <a href="./BrandStory.html">
+                    品牌故事
+                </a>
+            </li>
+            <li>
+                <a href="./shopCart.html">
+                    我的订单
+                </a>
+            </li>
+        </ul>
+        <ul class="right">
+            <li>
+                <a href="#">
+                    <img class="search" src="./static/icon/icon_search.png" alt="">
+                </a>
+            </li>
+            <li class="">
+                <a class="twoA " href="./login.html">登录</a>
+            </li>
+            <li>
+                <a href="./login.html">注册</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 横幅 -->
+    <div class="Banner">
+        <div class="w">
+            <!-- 图片 -->
+            <img class="main_img" src="./static/img/index/banner.png" alt="">
+            <img class="yinying yinying01" src="./static/img/index/banner_yinying01.png" alt="">
+            <img class="yinying yinying02" src="./static/img/index/banner_yinying02.png" alt="">
+            <div class="content">
+                <h2>一路与你箱伴</h2>
+                <div>
+                    <p>爱华仕小确幸系列拉杆箱</p>
+                    <p>让你的旅途没有烦恼</p>
+                </div>
+
+                <button>立即选购</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- banner 轮播 -->
+    <div class="banner_box ">
+        <div class="box-1">
+            <ul>
+                <li> <img src="./static/img/banner_01.jpg"> </li>
+                <li> <img src="./static/img/banner_02.jpg"> </li>
+                <li> <img src="./static/img/banner_03.jpg"> </li>
+            </ul>
+        </div>
+        <div class="box-2">
+            <ul>
+            </ul>
+        </div>
+        <div class="box-3"> <span class="prev">
+                < </span> <span class="next"> > </span> </div>
+    </div>
+    <div class="contioner">
+        <div class="w">
+            <!-- 专题系列 -->
+            <div class="MainTitle">
+                <div class="content">
+                    <h2>专题系列</h2>
+                    <p>SELECTED</p>
+                </div>
+            </div>
+            <div class="Thematic-series">
+                <div class="item">
+                    <img src="./static/img/index/pic01.png" alt="">
+                    <h2>旅行箱系列</h2>
+                    <p>让你的出行轻松无忧</p>
+                </div>
+                <div class="item">
+                    <img src="./static/img/index/pic02.png" alt="">
+                    <h2>商务背包系列</h2>
+                    <p>打造时尚商务之选</p>
+                    <button>查看更多</button>
+                </div>
+                <div class="item">
+                    <img src="./static/img/index/pic03.png" alt="">
+                    <h2>3D童包系列</h2>
+                    <p>酷萌宝宝用酷萌背包</p>
+                </div>
+            </div>
+            <!-- 爆款热卖 -->
+            <div class="MainTitle">
+                <div class="content">
+                    <h2>爆款热卖</h2>
+                    <p>HOT SALE</p>
+                </div>
+            </div>
+            <div class="Hot-sale">
+                <div class="box1">
+                    <img src="./static/img/index/pic04.png" alt="">
+                    <div class="info">
+                        <p class="name">爱华仕仙女箱</p>
+                        <p class="price">￥<span>499</span></p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <img src="./static/img/index/pic05.png" alt="">
+                    <div class="info">
+                        <p class="name">史努比拉杆箱</p>
+                        <p class="price">￥<span>509</span></p>
+                    </div>
+                </div>
+                <div class="box3">
+                    <img src="./static/img/index/pic06.png" alt="">
+                    <div class="info">
+                        <p class="name">史努比腰包</p>
+                        <p class="price">￥<span>109</span></p>
+                    </div>
+                </div>
+                <button class="more">查看更多</button>
+            </div>
+            <!-- 女士系列 -->
+            <div class="MainTitle">
+                <div class="content">
+                    <h2>女士系列</h2>
+                    <p>MS SERIES</p>
+                </div>
+            </div>
+            <div class="Women-Series">
+                <div class="content content01">
+
+                    <img src="./static/img/index/pic07.png" alt="">
+                    <div class="info">
+                        <p class="name">复古小圆包</p>
+                        <p class="price">￥299</p>
+                    </div>
+                </div>
+                <div class="content content02">
+                    <img src="./static/img/index/pic08.png" alt="">
+                    <div class="info">
+                        <p class="name">韩版双肩包</p>
+                        <p class="price">￥309</p>
+                    </div>
+                </div>
+            </div>
+            <div class="More">
+                <button class="more">查看更多</button>
+            </div>
+            <!-- 品牌故事 -->
+            <div class="MainTitle">
+                <div class="content">
+                    <h2>品牌故事</h2>
+                    <p>BRAND STORY</p>
+                </div>
+            </div>
+            <div class="Story">
+                <p>爱华仕品牌OIWAS成立于1995年 </p>
+                <p>品牌创始人以“做品质一流的箱包企业”为使命</p>
+                <p>专注于为消费者解决生活旅行中的不便，为消费者带来生活 旅行中的舒适感，将时尚精品的箱包呈现给全球的消费者。</p>
+                <div class="toIndex">
+                    <img src="./static/img/index/向上占行.svg" alt="">
+                    <a href="#">回到首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="FOOTER">
+        <div class="w">
+            <div class="left">
+                <img src="./static/img/logo2.png" alt="">
+                <img src="./static/img/logo3.jpg" alt="">
+            </div>
+            <div class="center">
+                <ul>
+                    <li class="title">
+                        关于爱华仕
+                    </li>
+                    <li></li>
+                    <li>品牌故事</li>
+                    <li>
+                        企业介绍
+                    </li>
+                    <li>
+                        查找门店
+                    </li>
+                    <li>
+                        意见反馈
+                    </li>
+                </ul>
+                <ul>
+                    <li class="title">
+                        我的账号
+                    </li>
+                    <li></li>
+                    <li>订单列表</li>
+                    <li>
+                        账户资料
+                    </li>
+                    <li>
+                        我的购物车
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="./static/img/erweima.png" alt="">
+                <img src="./static/img/erweima1.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 引入脚本 -->
+<script src="./js/main.js"></script>
+<script src="./js/Terminal.js"></script>
+<script src="./js/js.js"></script>
+<script>
+    // 下拉菜单
+    var xiala = document.getElementsByClassName("dropdown");
+    var Box = document.getElementsByClassName("dropBox");
+    console.log(xiala);
+    console.log(Box);
+    xiala[0].onmouseenter = () => {
+        Box[0].style.display = "block";
+    };
+    xiala[0].onmouseleave = () => {
+        Box[0].style.display = "none";
+    };
+</script>
+
+</html>
